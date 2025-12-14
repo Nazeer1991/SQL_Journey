@@ -19,3 +19,19 @@ INSERT INTO Employees (employee_id, first_name, last_name, job_title, department
 (6, 'Fiona', 'Garcia', 'Data Analyst', 'Analytics', 85000, '2022-11-01'),
 (7, 'George', 'Miller', 'Software Engineer', 'Engineering', 98000, '2023-01-15'),
 (8, 'Hannah', 'Davis', 'Data Analyst', 'Analytics', 88000, '2021-09-12');
+
+
+--1. Write a query to retrieve all columns for all employees in the 'Engineering' department.
+--2. Write a query to retrieve the first_name, last_name, and salary for all employees.
+--3. Find the first_name and job_title of the employee with employee_id 4.
+--4. Find all employees who work in the 'Sales' department AND have a salary greater than 100000.
+--5. Find all employees who are either in the 'HR' department OR the 'Analytics' department.
+--6. Find all 'Software Engineers' who are in the 'Engineering' department. (This seems redundant, but it's good practice with AND).
+
+--SELECT * FROM Employees;
+--SELECT * FROM Employees Where department = 'Engineering';
+--SELECT first_name,last_name,salary from employees;
+--SELECT first_name,job_title FROM Employees WHERE employee_id = '4';
+--SELECT * FROM Employees where department = 'Sales' And salary >100000
+--SELECT * FROM Employees Where department in ('HR','Analytics')
+--SELECT * FROM Employees WHERE department ='Engineering' AND job_title ='Software Engineer'
