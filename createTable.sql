@@ -35,3 +35,18 @@ INSERT INTO Employees (employee_id, first_name, last_name, job_title, department
 --SELECT * FROM Employees where department = 'Sales' And salary >100000
 --SELECT * FROM Employees Where department in ('HR','Analytics')
 --SELECT * FROM Employees WHERE department ='Engineering' AND job_title ='Software Engineer'
+
+-- Write a query to retrieve all employees, ordered by their salary from lowest to highest.
+-- Write a query to retrieve all employees, ordered by their salary from highest to lowest.
+-- Find all employees in the 'Engineering' department, and list them in alphabetical order by their last_name.
+-- Retrieve the 3 most recently hired employees.
+-- Find the first_name, job_title, and salary of the single highest-paid employee.
+-- Challenge: Order all employees first by department in ascending order (A-Z), and then within each department, order them by salary in descending order (highest to lowest).
+
+--SELECT * FROM Employees ORDER BY salary;
+--SELECT * FROM Employees ORDER BY salary desc
+--SELECT * FROM Employees WHERE department = 'Engineering' ORDER BY last_name;
+--SELECT * FROM Employees ORDER BY hire_date desc limit 3
+--SELECT first_name,job_title,salary FROM Employees ORDER BY salary DESC limit 1
+--wrong way 6th challenge SELECT * From (SELECT * FROM Employees ORDER BY department ASC) ORDER BY salary DESC
+--SELECT * FROM Employees ORDER BY department ASC,salary DESC
