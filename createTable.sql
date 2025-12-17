@@ -50,3 +50,24 @@ INSERT INTO Employees (employee_id, first_name, last_name, job_title, department
 --SELECT first_name,job_title,salary FROM Employees ORDER BY salary DESC limit 1
 --wrong way 6th challenge SELECT * From (SELECT * FROM Employees ORDER BY department ASC) ORDER BY salary DESC
 --SELECT * FROM Employees ORDER BY department ASC,salary DESC
+
+-- Find the total number of employees in the company.
+-- Find the total number of employees in each department.
+-- Calculate the average salary for all employees.
+-- Calculate the average salary for each job title.
+-- For each department, find the number of employees and the highest salary paid in that department.
+-- Challenge: Find the average salary for each department, but only show the departments where the average salary is greater than $90,000. Order the results by the average salary in descending order.
+
+--SELECT * FROM Employees
+--SELECT COUNT(*) AS total_employees FROM Employees
+--SELECT department,COUNT(first_name) As total_employee FROM Employees GROUP BY department
+--SELECT AVG(salary) AS average_salary From Employees
+--SELECT job_title,AVG(salary) as average_salary_jobtitle FROM Employees GROUP BY job_title
+
+--SELECT department,COUNT(first_name) AS number_of_employee,MAX(salary) as highest_salary FROM Employees GROUP BY department
+-- SELECT     department,AVG(salary) AS average_salary
+-- FROM Employees
+-- GROUP BY department
+-- HAVING AVG(salary) > 90000
+-- ORDER BY average_salary DESC;
+
